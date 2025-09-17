@@ -1,6 +1,6 @@
 # Alon Buyum Home Task
 
-A .NET application with authentication, role-based access control, and data management functionality.
+A .NET application with authentication, role based access control, and data management functionality.
 
 ## Quick Start
 
