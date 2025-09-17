@@ -1,0 +1,164 @@
+{
+	"info": {
+		"_postman_id": "1af01d04-ab7e-4c26-9a8b-2f952f21874f",
+		"name": "MovementHomeEx",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9905951"
+	},
+	"item": [
+		{
+			"name": "  https://localhost:7197/api/Auth/Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\"Admin\"",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7197/api/Auth/Login",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7197",
+					"path": [
+						"api",
+						"Auth",
+						"Login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:7197/api/Data/GetDataById/{id}",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJodHRwczovL2xvY2FsaG9zdDo3MTk3IiwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzE5NyIsImV4cCI6MTc1ODA0NjE2NiwibmFtZSI6IkFkbWluIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiQWRtaW4iLCJpYXQiOjE3NTgwNDUyNjYsIm5iZiI6MTc1ODA0NTI2Nn0.untZLrx1Tq-eFMI1uz2nrnDiTNbrQ91Z6xjax2CWzrE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7197/api/Data/GetDataById/2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7197",
+					"path": [
+						"api",
+						"Data",
+						"GetDataById",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:7197/api/Data/UpdateData",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJodHRwczovL2xvY2FsaG9zdDo3MTk3IiwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzE5NyIsImV4cCI6MTc1ODA0NjE2NiwibmFtZSI6IkFkbWluIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiQWRtaW4iLCJpYXQiOjE3NTgwNDUyNjYsIm5iZiI6MTc1ODA0NTI2Nn0.untZLrx1Tq-eFMI1uz2nrnDiTNbrQ91Z6xjax2CWzrE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 2,\r\n    \"value\": \"test2 from postman\",\r\n    \"createdAt\": \"2025-09-14T00:35:24.899\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7197/api/Data/UpdateData",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7197",
+					"path": [
+						"api",
+						"Data",
+						"UpdateData"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:7197/api/Data/AddData",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJodHRwczovL2xvY2FsaG9zdDo3MTk3IiwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzE5NyIsImV4cCI6MTc1ODAxOTczNiwibmFtZSI6IkFkbWluIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiQWRtaW4iLCJpYXQiOjE3NTgwMTg4MzYsIm5iZiI6MTc1ODAxODgzNn0.Q4zTa5fzPSBkFKGTVFgpR-qy_Am0vzNcpJ3mAd14jcY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 5,\r\n    \"value\": \"from postman with Admin\",\r\n    \"createdAt\": \"2025-09-16T13:40:52.941Z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7197/api/Data/AddData",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7197",
+					"path": [
+						"api",
+						"Data",
+						"AddData"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

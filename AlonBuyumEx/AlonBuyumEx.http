@@ -1,0 +1,6 @@
+@AlonBuyumEx_HostAddress = http://localhost:7197
+
+GET {{AlonBuyumEx_HostAddress}}/api/Data/GetDataById/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJodHRwczovL2xvY2FsaG9zdDo3MTk3IiwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzE5NyIsImV4cCI6MTc1ODAxNzg4NSwibmFtZSI6InN0cmluZyIsImlhdCI6MTc1ODAxNjk4NSwibmJmIjoxNzU4MDE2OTg1fQ.BMZ6q0ClzSldkSzrTjJF0KIBG94CfXFC_w7VRI0h8c8
+Accept: application/json
+###
